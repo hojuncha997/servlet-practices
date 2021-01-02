@@ -9,4 +9,23 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <servlet-name>HelloServlet</servlet-name>
+    <servlet-class>com.bitacademy.helloweb.controller.HelloServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description></description>
+    <display-name>JoinServlet</display-name>
+    <servlet-name>JoinServlet</servlet-name>
+    <servlet-class>com.bitacademy.helloweb.controller.JoinServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>HelloServlet</servlet-name>
+    <url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>JoinServlet</servlet-name>
+    <url-pattern>/join</url-pattern>
+  </servlet-mapping>
 </web-app>
