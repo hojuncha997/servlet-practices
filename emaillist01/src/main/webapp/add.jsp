@@ -4,6 +4,7 @@
 <%
 	//request는 jsp에 내장돼 있음.받은 값이 변수에 저장됨.
 	request.setCharacterEncoding("utf-8");
+	
 	String firstName = request.getParameter("firstName"); 
 	String lastName = request.getParameter("lastName");
 	String email = request.getParameter("email");
