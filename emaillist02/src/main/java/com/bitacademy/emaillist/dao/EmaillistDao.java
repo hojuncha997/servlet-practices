@@ -122,7 +122,7 @@ public class EmaillistDao {
 			Class.forName("org.mariadb.jdbc.Driver");
 			
 			// 2. 연결하기
-			String url = "jdbc:mysql://192.168.1.212:3307/webdb?characterEncoding=utf8";
+			String url = "jdbc:mysql://192.168.1.15:3307/webdb?characterEncoding=utf8";
 			conn = DriverManager.getConnection(url, "webdb", "webdb");
 		} catch (ClassNotFoundException e) {
 			System.out.println("드라이버 로딩 실패:" + e);
